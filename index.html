@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Drawing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Drawing App</h1>
+        <div class="toolbar">
+            <label for="colorPicker">Color:</label>
+            <input type="color" id="colorPicker" value="#000000">
+            
+            <label for="brushSize">Brush Size:</label>
+            <input type="range" id="brushSize" min="1" max="20" value="5">
+            
+            <button id="eraser">Eraser</button>
+            <label for="eraserSize">Eraser Size:</label>
+            <input type="range" id="eraserSize" min="5" max="50" value="20">
+            
+            <button id="clearCanvas">Clear</button>
+            <button id="undo">Undo</button>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
